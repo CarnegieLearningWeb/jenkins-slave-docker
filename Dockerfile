@@ -16,7 +16,7 @@ RUN apk --allow-untrusted --no-cache -U add \
     openjdk8 \
     openssh-client \
     mysql-client \
-    python3
+    python3 \
     zlib-dev \
     chromium \
     xvfb \
