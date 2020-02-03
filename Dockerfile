@@ -27,6 +27,8 @@ RUN apk --allow-untrusted --no-cache -U add \
     grep \
     udev \
     chromium-chromedriver
+    
+RUN pip3 install awscli
 
 ENV CHROME_BIN=/usr/bin/chromium-browser
 ENV CHROME_PATH=/usr/lib/chromium/
