@@ -7,6 +7,7 @@ RUN echo "http://dl-2.alpinelinux.org/alpine/v3.10/testing" >> /etc/apk/reposito
 RUN adduser -D jenkins
 
 RUN apk --allow-untrusted --no-cache -U add \
+    apache-ant \
     bash \
     curl \
     git \
