@@ -1,7 +1,5 @@
 FROM ubuntu:18.04
 
-RUN 
-
 RUN adduser --disabled-password --gecos "" jenkins \
     && apt update \
     && apt -y install \
