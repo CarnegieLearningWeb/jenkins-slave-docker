@@ -26,7 +26,8 @@ RUN apk --allow-untrusted --no-cache -U add \
     ttf-freefont \
     grep \
     udev \
-    chromium-chromedriver
+    chromium-chromedriver \
+    openldap-clients
     
 RUN pip3 install awscli
 
