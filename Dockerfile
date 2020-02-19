@@ -16,6 +16,7 @@ RUN apk --allow-untrusted --no-cache -U add \
     openjdk8 \
     openssh-client \
     mysql-client \
+    python2 \
     python3 \
     zlib-dev \
     chromium \
@@ -29,8 +30,7 @@ RUN apk --allow-untrusted --no-cache -U add \
     chromium-chromedriver \
     openldap-clients
     
-RUN pip3 install awscli && \
-    ln -s /usr/bin/python3 /usr/bin/python
+RUN pip3 install awscli
 
 ENV ANT_VERSION 1.10.7
 ENV ANT_HOME /etc/ant-${ANT_VERSION}
