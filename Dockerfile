@@ -16,6 +16,7 @@ RUN apk --allow-untrusted --no-cache -U add \
     openjdk8 \
     openssh-client \
     mysql-client \
+    py-pip \
     python2 \
     python3 \
     zlib-dev \
@@ -31,6 +32,7 @@ RUN apk --allow-untrusted --no-cache -U add \
     openldap-clients
     
 RUN pip3 install awscli
+RUN pip install requests urllib3
 
 ENV ANT_VERSION 1.10.7
 ENV ANT_HOME /etc/ant-${ANT_VERSION}
