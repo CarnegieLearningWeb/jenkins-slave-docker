@@ -31,7 +31,7 @@ RUN apk --allow-untrusted --no-cache -U add \
     chromium-chromedriver \
     openldap-clients
     
-RUN pip3 install awscli
+RUN pip3 install awscli requests urllib3
 RUN pip install requests urllib3
 
 ENV ANT_VERSION 1.10.7
