@@ -31,8 +31,8 @@ RUN apk --allow-untrusted --no-cache -U add \
     chromium-chromedriver \
     openldap-clients
     
-RUN pip3 install awscli requests urllib3
-RUN pip install requests urllib3
+RUN pip3 install awscli requests urllib3 pymysql
+RUN pip install requests urllib3 pymysql
 
 ENV ANT_VERSION 1.10.7
 ENV ANT_HOME /etc/ant-${ANT_VERSION}
