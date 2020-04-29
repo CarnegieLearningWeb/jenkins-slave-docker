@@ -9,6 +9,7 @@ RUN adduser -D jenkins
 RUN apk --allow-untrusted --no-cache -U add \
     bash \
     curl \
+    docker \
     git \
     maven \
     nodejs \
