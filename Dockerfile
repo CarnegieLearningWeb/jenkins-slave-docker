@@ -5,6 +5,7 @@ RUN echo "http://dl-2.alpinelinux.org/alpine/v3.10/community" >> /etc/apk/reposi
 RUN echo "http://dl-2.alpinelinux.org/alpine/v3.10/testing" >> /etc/apk/repositories 
 
 RUN adduser -D jenkins
+RUN addgroup jenkins ping
 
 RUN apk --allow-untrusted --no-cache -U add \
     bash \
